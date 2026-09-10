@@ -1,0 +1,6 @@
+{
+  "name": "FujiFinder | Camera Discovery & Gear Guide",
+  "description": "FujiFinder is an independent camera review journal and testing lab featuring hands-on evaluations, sensor benchmarks, comparisons, and field photography guides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,174 @@
+{
+  "settings": {
+    "activeProvider": "resend",
+    "fromName": "FujiFinder Editorial",
+    "fromEmail": "newsletter@fujifinder.my.id",
+    "replyTo": "editorial@fujifinder.my.id",
+    "enableWelcomeEmail": true,
+    "enableDoubleOptIn": true,
+    "verificationTokenExpirationHours": 24,
+    "resendCooldownMinutes": 2,
+    "maxVerificationAttempts": 5,
+    "verificationSubject": "Confirm your FujiFinder subscription",
+    "verificationTemplate": "Thanks for subscribing to FujiFinder.\n\nPlease confirm your email address to start receiving photography insights, camera recommendations, reviews, and updates.",
+    "unsubscribeFooterText": "You received this email because you subscribed to the FujiFinder Dispatch photography journal.",
+    "companyAddress": "FujiFinder Media Group • Jakarta & Tokyo Independent Camera Testing Lab"
+  },
+  "subscribers": [
+    {
+      "id": "sub_964a370ebe9ff15d",
+      "email": "yunzilinza@gmail.com",
+      "status": "active",
+      "subscribed_at": "2026-09-09T00:20:29.915Z",
+      "email_verified_at": "2026-09-09T00:20:29.915Z",
+      "verification_token_hash": null,
+      "verification_expires_at": null,
+      "unsubscribed_at": null,
+      "created_at": "2026-09-09T00:20:29.915Z",
+      "updated_at": "2026-09-09T00:20:29.915Z",
+      "welcome_email_sent_at": null,
+      "double_opt_in_token": null,
+      "unsubscribe_token": "unsub_1116d86eac407fd0ea2de58c51666b46",
+      "source": "landing_page_banner",
+      "verification_attempts": 1,
+      "last_verification_sent_at": "2026-09-09T00:20:29.915Z"
+    }
+  ],
+  "templates": [
+    {
+      "id": "tpl-welcome",
+      "name": "Welcome to FujiFinder Dispatch",
+      "subject": "Welcome to the FujiFinder Editorial Dispatch",
+      "description": "Sent automatically to new subscribers upon joining.",
+      "category": "welcome",
+      "variables": [
+        "{{subscriber.name}}",
+        "{{subscriber.email}}",
+        "{{site.url}}",
+        "{{unsubscribe_url}}"
+      ],
+      "created_at": "2026-09-01T10:00:00Z",
+      "updated_at": "2026-09-01T10:00:00Z",
+      "htmlContent": "\n<div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #FAF9F6; border: 1px solid #EAE6DF; border-radius: 16px; overflow: hidden; color: #1A1A1A;\">\n  <div style=\"background: #0E0E0E; padding: 32px 24px; text-align: center;\">\n    <h1 style=\"color: #FFFFFF; font-size: 26px; margin: 0; font-weight: 700; letter-spacing: -0.5px;\">FujiFinder</h1>\n    <p style=\"color: #A0A0A0; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; margin: 8px 0 0 0;\">Camera Testing Lab & Gear Field Guide</p>\n  </div>\n  <div style=\"padding: 32px 28px;\">\n    <p style=\"font-size: 16px; font-weight: 600; margin-top: 0;\">Welcome to the circle of mindful photographers,</p>\n    <p style=\"font-size: 14px; line-height: 1.6; color: #444444;\">\n      Thank you for subscribing to the <strong>FujiFinder Dispatch</strong>. Every two weeks, our editorial team brings you rigorous, 100% un-sponsored lab evaluations, real-world street photography impressions, and curated gear recommendations that help you tell better visual stories.\n    </p>\n    <div style=\"background: #FFFFFF; border: 1px solid #E5E1D8; border-radius: 12px; padding: 20px; margin: 24px 0;\">\n      <h3 style=\"margin-top: 0; font-size: 15px; color: #111111;\">What you'll receive in your inbox:</h3>\n      <ul style=\"margin: 0; padding-left: 20px; font-size: 13px; color: #555555; line-height: 1.8;\">\n        <li><strong>In-Depth Lab Scorecards:</strong> Real sensor dynamic range, chromatic aberration tests, and AF hit rates.</li>\n        <li><strong>Field Comparisons:</strong> Direct head-to-head camera shootouts in low light and travel conditions.</li>\n        <li><strong>Verified Price Drops:</strong> Monitored discounts across authorized camera retailers.</li>\n      </ul>\n    </div>\n    <div style=\"text-align: center; margin: 32px 0 16px 0;\">\n      <a href=\"https://www.fujifinder.my.id\" style=\"display: inline-block; background: #111111; color: #FFFFFF; text-decoration: none; padding: 12px 28px; border-radius: 50px; font-size: 13px; font-weight: 600; letter-spacing: 0.5px;\">Explore Current Reviews &rarr;</a>\n    </div>\n  </div>\n  <div style=\"background: #F0EAE1; padding: 20px 24px; text-align: center; font-size: 11px; color: #777777; border-top: 1px solid #E2DDD5;\">\n    <p style=\"margin: 0 0 8px 0;\">FujiFinder Editorial Platform • Independent Photography Journal</p>\n    <p style=\"margin: 0;\">Sent to {{subscriber.email}} because you subscribed at FujiFinder.<br/>\n      <a href=\"{{unsubscribe_url}}\" style=\"color: #666666; text-decoration: underline;\">Unsubscribe anytime</a> with one click.\n    </p>\n  </div>\n</div>"
+    },
+    {
+      "id": "tpl-new-article",
+      "name": "New Field Review Announcement",
+      "subject": "New Review: {{article.title}}",
+      "description": "Broadcast announcement when a new camera test or editorial guide is published.",
+      "category": "article",
+      "variables": [
+        "{{subscriber.name}}",
+        "{{article.title}}",
+        "{{article.excerpt}}",
+        "{{article.image}}",
+        "{{article.url}}",
+        "{{unsubscribe_url}}"
+      ],
+      "created_at": "2026-09-02T10:00:00Z",
+      "updated_at": "2026-09-02T10:00:00Z",
+      "htmlContent": "\n<div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #FFFFFF; border: 1px solid #EAEAEA; border-radius: 16px; overflow: hidden; color: #1A1A1A;\">\n  <div style=\"background: #0E0E0E; padding: 24px; text-align: left; display: flex; align-items: center; justify-content: space-between;\">\n    <span style=\"color: #FFFFFF; font-size: 20px; font-weight: 700;\">FujiFinder</span>\n    <span style=\"background: rgba(255,255,255,0.15); color: #FFFFFF; font-size: 10px; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px;\">Fresh Review</span>\n  </div>\n  <div style=\"padding: 28px 24px;\">\n    <span style=\"display: inline-block; font-size: 11px; font-weight: 700; color: #C62828; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;\">Exclusive In-Depth Field Test</span>\n    <h2 style=\"font-size: 22px; font-weight: 700; line-height: 1.3; margin: 0 0 16px 0; color: #111111;\">{{article.title}}</h2>\n    <div style=\"margin: 20px 0; border-radius: 12px; overflow: hidden; max-height: 320px; background: #F4F4F4;\">\n      <img src=\"{{article.image}}\" alt=\"{{article.title}}\" style=\"width: 100%; height: auto; display: block; object-fit: cover;\" />\n    </div>\n    <p style=\"font-size: 14px; line-height: 1.6; color: #4A4A4A; margin: 16px 0 24px 0;\">\n      {{article.excerpt}}\n    </p>\n    <div style=\"text-align: left; margin-bottom: 24px;\">\n      <a href=\"{{article.url}}\" style=\"display: inline-block; background: #0E0E0E; color: #FFFFFF; text-decoration: none; padding: 12px 24px; border-radius: 50px; font-size: 13px; font-weight: 600;\">Read Full Field Analysis &rarr;</a>\n    </div>\n  </div>\n  <div style=\"background: #FAFAFA; padding: 20px 24px; font-size: 11px; color: #888888; border-top: 1px solid #EEEEEE; text-align: center;\">\n    <p style=\"margin: 0 0 6px 0;\">FujiFinder • Independent Gear Lab & Photography Guides</p>\n    <a href=\"{{unsubscribe_url}}\" style=\"color: #999999; text-decoration: underline;\">Unsubscribe from new review dispatches</a>\n  </div>\n</div>"
+    },
+    {
+      "id": "tpl-camera-deal",
+      "name": "Camera Deals & Price Drop Alert",
+      "subject": "Price Alert: Verified Savings on {{product.name}}",
+      "description": "Notify subscribers of verified retail price drops and holiday rebates.",
+      "category": "deal",
+      "variables": [
+        "{{subscriber.name}}",
+        "{{product.name}}",
+        "{{product.price}}",
+        "{{product.image}}",
+        "{{product.url}}",
+        "{{unsubscribe_url}}"
+      ],
+      "created_at": "2026-09-03T10:00:00Z",
+      "updated_at": "2026-09-03T10:00:00Z",
+      "htmlContent": "\n<div style=\"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #FFFFFF; border: 1px solid #EAEAEA; border-radius: 16px; overflow: hidden; color: #1A1A1A;\">\n  <div style=\"background: #101010; padding: 24px; text-align: center;\">\n    <span style=\"color: #4ADE80; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700;\">Verified Gear Deal Alert</span>\n    <h1 style=\"color: #FFFFFF; font-size: 24px; margin: 8px 0 0 0; font-weight: 700;\">FujiFinder Deals</h1>\n  </div>\n  <div style=\"padding: 28px 24px; text-align: center;\">\n    <h2 style=\"font-size: 20px; font-weight: 700; margin: 0 0 8px 0;\">{{product.name}}</h2>\n    <div style=\"margin: 20px auto; max-width: 380px; border-radius: 12px; overflow: hidden; border: 1px solid #EEEEEE;\">\n      <img src=\"{{product.image}}\" alt=\"{{product.name}}\" style=\"width: 100%; height: auto; display: block;\" />\n    </div>\n    <div style=\"display: inline-block; background: #FEF3C7; color: #92400E; padding: 6px 16px; border-radius: 20px; font-weight: 700; font-size: 13px; margin: 12px 0 20px 0;\">\n      Instant Rebate Active Now\n    </div>\n    <p style=\"font-size: 14px; color: #555555; max-width: 440px; margin: 0 auto 24px auto; line-height: 1.6;\">\n      Our automated pricing crawler detected a verified discount on this top-rated creator body at authorized partner retailers.\n    </p>\n    <a href=\"{{product.url}}\" style=\"display: inline-block; background: #059669; color: #FFFFFF; text-decoration: none; padding: 13px 32px; border-radius: 50px; font-size: 14px; font-weight: 700;\">Check Retail Availability &rarr;</a>\n  </div>\n  <div style=\"background: #F9F9F9; padding: 20px 24px; font-size: 11px; color: #888888; border-top: 1px solid #EEEEEE; text-align: center;\">\n    <p style=\"margin: 0 0 6px 0;\">Affiliate Disclosure: FujiFinder may earn an affiliate commission on qualifying purchases made through our links at no added cost to you.</p>\n    <a href=\"{{unsubscribe_url}}\" style=\"color: #999999; text-decoration: underline;\">Unsubscribe from deal notifications</a>\n  </div>\n</div>"
+    }
+  ],
+  "campaigns": [
+    {
+      "id": "cmp-1",
+      "name": "September Field Test Roundup: X-T5 vs X-T50",
+      "subject": "Fujifilm X-T5 vs X-T50: Which 40MP Hybrid Should You Choose?",
+      "previewText": "Head-to-head sensor benchmarks, dynamic range lab scorecards, and low-light street tests.",
+      "fromName": "FujiFinder Editorial",
+      "replyTo": "editorial@fujifinder.my.id",
+      "content": "Full analysis comparing the twin 40.2MP flagship sensors with lab scorecards.",
+      "templateId": "tpl-new-article",
+      "audience": "all_active",
+      "provider": "resend",
+      "recipientCount": 3,
+      "status": "sent",
+      "created_at": "2026-09-04T10:00:00Z",
+      "sent_at": "2026-09-04T10:05:00Z",
+      "metrics": {
+        "sent": 3,
+        "delivered": 3,
+        "failed": 0,
+        "opened": 2,
+        "clicked": 1
+      }
+    }
+  ],
+  "logs": [
+    {
+      "recipient": "yunzilinza@gmail.com",
+      "subject": "Welcome to the FujiFinder Editorial Dispatch",
+      "emailType": "welcome",
+      "provider": "resend",
+      "status": "failed",
+      "errorMessage": "Resend API key is not configured. Email could not be dispatched.",
+      "sent_at": "2026-09-09T00:20:29.918Z",
+      "id": "log_42ac21f37c6ee31f"
+    },
+    {
+      "id": "log-1",
+      "campaignId": "cmp-1",
+      "recipient": "marcus.vance@creatorlab.io",
+      "subject": "Fujifilm X-T5 vs X-T50: Which 40MP Hybrid Should You Choose?",
+      "emailType": "marketing",
+      "provider": "resend",
+      "status": "delivered",
+      "providerMessageId": "res_msg_982341908234",
+      "sent_at": "2026-09-04T10:05:12Z",
+      "delivered_at": "2026-09-04T10:05:14Z"
+    },
+    {
+      "id": "log-2",
+      "campaignId": "cmp-1",
+      "recipient": "elena.rostova@streetframes.net",
+      "subject": "Fujifilm X-T5 vs X-T50: Which 40MP Hybrid Should You Choose?",
+      "emailType": "marketing",
+      "provider": "resend",
+      "status": "delivered",
+      "providerMessageId": "res_msg_982341908235",
+      "sent_at": "2026-09-04T10:05:15Z",
+      "delivered_at": "2026-09-04T10:05:18Z"
+    },
+    {
+      "id": "log-3",
+      "campaignId": "cmp-1",
+      "recipient": "david.tanaka@tokyowalks.com",
+      "subject": "Fujifilm X-T5 vs X-T50: Which 40MP Hybrid Should You Choose?",
+      "emailType": "marketing",
+      "provider": "resend",
+      "status": "delivered",
+      "providerMessageId": "res_msg_982341908236",
+      "sent_at": "2026-09-04T10:05:18Z",
+      "delivered_at": "2026-09-04T10:05:20Z"
+    },
+    {
+      "id": "log-4",
+      "recipient": "david.tanaka@tokyowalks.com",
+      "subject": "Welcome to the FujiFinder Editorial Dispatch",
+      "emailType": "welcome",
+      "provider": "resend",
+      "status": "sent",
+      "providerMessageId": "res_msg_welc_1928374",
+      "sent_at": "2026-09-01T11:01:00Z"
+    }
+  ]
+}
